@@ -1,0 +1,11 @@
+# Deploy Glitchtip on Scalingo
+
+Create an app on Scalingo. Add env vars :
+
+ * BUILDPACK_URL = https://github.com/Scalingo/multi-buildpack
+ * GLITCHTIP_VERSION = v3.4.6
+
+Add a Redis and a PostgreSQL addons.
+
+Push the repo on your app. When the deployment is over, you can create an account with this procedure (run in a bash container) : https://glitchtip.com/documentation/install#django-admin .
+Use the documentation ( https://glitchtip.com/documentation/install#configuration ) to fill env vars specific to Glitchtip.
